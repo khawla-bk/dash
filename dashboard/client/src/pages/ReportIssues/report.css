@@ -1,0 +1,21 @@
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+.lab-input {
+  margin-bottom: 40px;
+}
+.mess-input {
+  line-height: 45px;
+  width: 265px;
+}
+.submit-btn {
+  width: 75px;
+  margin-left: 550px;
+}
+.input-file {
+  margin: 20px 0px 20px 500px;
+}

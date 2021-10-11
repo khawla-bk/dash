@@ -1,0 +1,46 @@
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #11101d;
+  margin: 10px 0px 40px 20px;
+}
+
+.table-container {
+  padding: 0px 2rem;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+th {
+  text-align: center;
+}
+thead th {
+  background-color: #55608f;
+}
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}

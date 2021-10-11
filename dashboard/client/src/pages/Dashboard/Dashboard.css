@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* sidebar css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+img {
+  margin-left: -13px;
+  width: 36px;
+  height: 28px;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background: #11101d;
+  padding: 6px 20px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.logo {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sidebar #btn {
+  margin-left: 3px;
+  position: absolute;
+  color: white;
+  left: 82%;
+  top: 10px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sidebar ul {
+  margin-top: 22px;
+}
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  list-style: none;
+  margin: 15px 1px;
+  line-height: 50px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+.sidebar ul li a:hover {
+  background-color: #1d1b31;
+  color: #fff;
+}
+.sidebar ul li a i {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+.sidebar ul li input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background-color: #1d1b31;
+  padding-left: 50px;
+  font-size: 12px;
+  color: #fff;
+}
+.sidebar ul li .bx-search-alt {
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 48px;
+  transition: all 0.5 ease;
+}
+.sidebar ul li .bx-search-alt:hover {
+  background-color: #fff;
+  color: #11101d;
+}
+.sidebar .profile-content {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.sidebar .profile-content .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background-color: #1d1b31;
+}
+.sidebar .profile-content .profile .profile-details {
+  display: flex;
+  align-items: center;
+}
+.profile .profile-details img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  margin-left: 6px;
+}
+.profile .profile-details .name-job {
+  margin-left: 12px;
+}
+.profile .profile-details .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile .profile-details .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile #logout {
+  position: absolute;
+  left: 88%;
+  bottom: 5px;
+  transform: translateX(-30%);
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+/*main dash css*/
+.dahboard-container {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: calc(100% - 240px);
+  left: 240px;
+}
+.dahboard-container .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #11101d;
+  margin: 10px 0px 40px 20px;
+}
+.main-content {
+  padding: 2rem;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+.main-content .wrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 1rem;
+}
+.main-content .wrap:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.btn-container {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  flex-direction: column;
+}
+.wrap:hover .btn-container {
+  display: flex;
+}
+.btn-container button {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  padding: 2px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: rgba(86, 86, 170, 0.753);
+}
+button.danger {
+  background-color: rgba(119, 29, 29, 0.753);
+}
+.image {
+  margin-left: 1px;
+  object-fit: contain;
+}
+.title {
+  font-weight: 500;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container img {
+  object-fit: cover;
+  display: inline-flex;
+  width: 30px;
+  height: 20px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.icon-container button {
+  margin-left: 10px;
+  border-radius: 30px;
+  border: 1px solid rgb(148, 148, 148);
+}
+
+.success-btn {
+  background-color: rgba(0, 128, 128, 0.452);
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash-footer {
+  position: fixed;
+  bottom: 0;
+  left: 260px;
+  font-size: 12px;
+}
